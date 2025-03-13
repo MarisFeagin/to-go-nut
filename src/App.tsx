@@ -29,6 +29,16 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+
+      // Header
+          <div className="header">
+              <h1 className="header">To Go Nutrition</h1><img src=" " className="header" height="60px" width="60px" alt="green apple speeding"/>
+          </div>
+
+      // Nutrition Label Side-Panel
+          <div className="nutLabelPanel">
+              <NutLabel></NutLabel>
+          </div>
     </>
   )
 }
