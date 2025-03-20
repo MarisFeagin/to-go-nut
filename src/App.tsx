@@ -7,7 +7,7 @@ function App() {
   return (
       <>
           <div className="header">
-              <h1><em>To Go Nutrition</em></h1><img src="assets/" height="60px" width="60px" alt="green apple speeding"/>
+              <img src="assets/" height="60px" width="60px" alt="green apple speeding"/><h1><em>To Go Nutrition</em></h1>
           </div>
           // Insert Login page //
           <div className="login"></div>
@@ -18,7 +18,6 @@ function App() {
                   <input type="search" className="search-bar" id="search" name="search"
                          placeholder="Your next meal..."/>
                   <button type="submit" className="submit">Search</button>
-                  <button type="button" className="clear-search">Clear Search</button>
 
                   <div className="dropdown">
                       <button className="dropbtn">Diets and Allergens</button>
@@ -66,10 +65,10 @@ function App() {
                       </div>
                   </div>
 
-                  <div className="slide-container">
-                      <p>Calories Per Meal: <span id="demo"></span></p>
-                      <input type="range" min="180" max="3000" value="500" className="slider" id="myRange"/>
-                  </div>
+                  // <div className="slide-container">
+                  //     <p>Calories Per Meal: <span id="demo"></span></p>
+                  //     <input type="range" min="180" max="3000" value="500" className="slider" id="myRange"/>
+                  // </div>
               </form>
           </div>
           <br/>

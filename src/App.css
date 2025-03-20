@@ -40,5 +40,213 @@
 .read-the-docs {
   color: #888;
 }
-<!--ToGoNut-->
 
+    html {
+      font-size: 100%;
+      color: white;
+      background-color:#3e8e41;
+    }
+
+.diets {
+  display: none;
+}
+
+.allergens {
+  display: none;
+}
+
+.slide-container {
+  display: none;
+}
+
+#map {
+  height: 80vh;
+  width: 100%;
+}
+
+.header {
+  container: initial;
+  background-color: #3e8e41;
+  font-family: Verdana, sans-serif;
+  display: flex;
+}
+
+p {
+  font-family: Verdana, sans-serif;
+}
+
+.nav {
+  text-align: center;
+}
+
+ul {
+  visibility: hidden;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+
+#search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+form {
+  display: flex;
+  gap: 20px;
+}
+
+.search-bar {
+  width: 30%;
+}
+
+/* Side menu styling */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -350px; /* Initially off-screen */
+  width: 350px; /* Increased width */
+  height: 100%;
+  background-color: #f4f4f4;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease-in-out;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000; /* Ensure it stays on top of the map */
+}
+
+/* When side menu is visible */
+.side-menu.open {
+  right: 0;
+}
+
+/* Header inside side menu */
+.menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#closeMenuButton {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling for menu items */
+.menu-items {
+  margin-top: 20px;
+}
+
+.menu-items .menu-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-items .menu-item:last-child {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Dropdown Button Filter CSS*/
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  font-family: Verdana, sans-serif;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: none;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 450px;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1000;
+  font-family: Verdana, sans-serif;
+}
+
+/* Links inside the dropdown */
+.dropdown-content li {
+  color: black;
+  padding: 30px 24px;
+  text-decoration: none;
+  display: flex;
+  font-family: Verdana, sans-serif;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content li:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #327234;}
+
+/* Slider Calorie CSS */
+.slide-container {
+  width: 44%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/* Submit Btn */
+.submit {
+  background-color: #3e7545;
+  padding: 16px;
+  font-size: 16px;
+  font-family: Verdana, sans-serif;
+  cursor: pointer;
+}
