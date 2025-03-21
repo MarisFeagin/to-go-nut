@@ -1,4 +1,4 @@
-
+import MapJS from './assets/map.jsx'
 import './App.css'
 
 function App() {
@@ -74,7 +74,7 @@ function App() {
           <br/>
 
           // Insert Map JS API
-          <div id="map"></div>
+          <div id="MapJS"></div>
 
           // Insert Menu Page
           <div className="menu"></div>
